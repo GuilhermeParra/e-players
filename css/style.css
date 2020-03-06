@@ -3,7 +3,7 @@
     --pink:#FC1E8B;
     --purple:#7278C3;
     --blue: #00A8DC;
-    --fundo:
+   
 }
 
 *{
@@ -388,13 +388,15 @@ margin: 2px 1em 2em 0px;
 .form_cadastro .campo:nth-last-child(n) button{
     margin: auto;
 }
-
+header .fa-bars{
+    display: none;
+}
 /*Inicio Responsividade*/
 /*1200px*/
 
 @media(max-width: 800px){
    .container{
-       width: 90%;
+       width: 95%;
    }
     header .container img{
         max-width: 180px;
@@ -436,5 +438,50 @@ margin: 2px 1em 2em 0px;
      .content{
          margin-top: 30px;
      }
+     .card img{
+         margin-top: 2em;
+         margin-left: 1em;
+     }
+     .content section {
+        width: 100%;
+        margin-right: 20px;
+    }
+    .resultado p{
+        margin-top: 0.5em;
+    }
 }/*Fim mídia Query 800px*/
+/*inicio media query 460px*/
+@media(max-width:460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div{
+        display:flex;
+        
+        align-items: center;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        width: 100%;
+        background-color: var(--purple);
+        left: 0;
+    display: none;
+}
 
+    #menu ul{
+        flex-direction: column;
+        height: 300px;
+        margin-left: 1em;
+    }
+    #menu a{
+        display: block;
+       padding: 0.5em 0px;
+       
+    }
+    header .container div a{
+margin-left: 3em;
+    }
+}
